@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Captura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header><h1>Sistema de Captura</h1>
+        <h2>Captura asistencias, reportes e incidentes de enfermería </h2>
+        <div class="menu">
+        <br>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="asistencias.html"> Registro de Asistencia</li></a>
+                <li><a href="reportes.html">Reportes</li></a>
+                <li><a href="justificantes.html">Justificantes</li></a>
+                <li><a href="enfermeria.html">Incidentes de enfermeria</a></li>
+            </ul>
+        </nav></div></header>
+    
+        <div class="caja">
+        <form>
+            <h2 class="reporte-titulo">REPORTE</h2>
+
+            <label for="nombre">Nombre del alumno:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div>
+             <label for="NumControl">Número de control:</label>
+            <input type="text" id="NumControl" name="NumControl">
+            </div>
+            <label for="grupo">Grupo:</label>
+            <input type="text" id="grupo" name="grupo">
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="folio">Folio:</label>
+            <input type="text" id="folio" name="folio">
+
+            <div class="checkbox-group">
+            <label><input type="checkbox" name="faltas"> Retardo a clase</label>
+            <label><input type="checkbox" name="faltas"> Incumplimiento en los trabajos</label>
+            <label><input type="checkbox" name="faltas"> Incitación al desorden</label>
+            <label><input type="checkbox" name="faltas"> Falta de respeto a sus compañeros</label>
+            <label><input type="checkbox" name="faltas"> Inasistencias</label>
+            <label><input type="checkbox" name="faltas"> No portar el uniforme</label>
+            <label><input type="checkbox" name="faltas"> Mala conducta</label>
+            <label><input type="checkbox" name="faltas"> Falta de respeto al personal</label>
+            </div>
+
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+
+            <label for="maestro">nombre del maestro que reporta:</label>
+            <input type="text" id="maestro" name="maestro">
+
+            <label for="materia">Materia:</label>
+            <input type="text" id="materia" name="materia">
+
+            <label for="hora">Hora del incidente:</label>
+            <input type="time" id="hora" name="hora">
+
+            <label for="compromiso">Me comprometo:</label>
+            <textarea id="compromiso" name="compromiso" rows="2"></textarea>
+
+            <div class="signature-section">
+            <div>
+                <p>Alumno</p>
+                <input type="text" placeholder="Nombre / Teléfono">
+                </div>
+                <div>
+                <p>Padre o tutor</p>
+                <input type="text" placeholder="Nombre / Teléfono">
+                </div>
+                <div>
+                <p>Tutor de grupo</p>
+                <input type="text" placeholder="Nombre / Teléfono">
+                </div>
+                </div>
+
+                <button type="submit">Guardar Reporte</button>
+      </form> </div>
+    </body>
+</html>
