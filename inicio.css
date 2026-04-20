@@ -13,32 +13,9 @@
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  max-width: 280px;   /* límite de ancho para que no se vean gigantes */
-  margin: auto;       /* centra cada card dentro de su columna */
+  max-width: 280px;
+  margin: auto;
 }
-/* Responsive tablet */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    text-align: center;
-  }
-  .card {
-    width: 100%;
-  }
-}
-
-/* Responsive celular */
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .menu a {
-    display: block;
-    padding: 15px;
-  }
-}
-
-
 
 .card:hover {
   transform: translateY(-5px);
@@ -51,13 +28,13 @@
 }
 
 .card img {
-  max-width: 100px;   /* controla tamaño de la imagen */
+  max-width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
 
 .card p {
-  font-size: 0.9em;   /* texto más compacto */
+  font-size: 0.9em;
   color: #333333;
   margin-bottom: 15px;
 }
@@ -65,7 +42,7 @@
 .card .btn {
   display: inline-block;
   padding: 8px 15px;
-  background-color: #ca0808;
+  background-color: #ca0808; /* rojo CBTis */
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
@@ -74,4 +51,24 @@
 
 .card .btn:hover {
   background-color: #f32c25;
+}
+
+/* Responsive tablet */
+@media (max-width: 768px) {
+  .inicio-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* Responsive celular */
+@media (max-width: 480px) {
+  .inicio-grid {
+    grid-template-columns: 1fr; /* 1 columna en celular */
+  }
+  .card {
+    width: 100%;
+  }
 }
