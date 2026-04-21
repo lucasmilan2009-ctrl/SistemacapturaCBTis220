@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Captura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>.watermark {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px; 
+  opacity: 2.05; 
+  pointer-events: none; 
+  z-index: 9999; 
+  }</style>
+  <img src="logo.cbtis.png" class="watermark" alt="Marca de agua">
+  <header>
+    <h1>Sistema de Captura</h1>
+    <h2>Captura asistencias, reportes e incidentes de enfermería</h2>
+  </header>
+
+  <h3>Autoriza el acceso a la cámara de tu dispositivo y escanea el código QR del alumno para que se registre la asistencia</h3>
+  
+  <label>Introduce la fecha de la que quieres registrar asistencia:</label>
+  <div class="fecha-asis">
+    <input type="date" required>
+  </div>
+
+  <video id="video" autoplay></video>
+  <canvas id="canvas" hidden></canvas>
+<script src="clave.js"></script>
+<script src="clave.js"></script>
+<script>
+  // Activa la protección al cargar la página
+  document.addEventListener("DOMContentLoaded", function() {
+    iniciarProteccion("CBTis220"); // puedes cambiar la clave aquí
+  });
+</script>
+<script>
+  // Activa la protección al cargar la página
+  document.addEventListener("DOMContentLoaded", function() {
+    iniciarProteccion("CBTis220"); // puedes cambiar la clave aquí
+  });
+</script>
+  <!-- Botón rojo de salir fijo en esquina inferior izquierda -->
+  <a href="index.html" 
+     style="position:fixed; bottom:20px; left:20px; background-color:#C8102E; color:white; padding:10px 18px; border-radius:6px; font-weight:bold; text-decoration:none;">
+     inicio
+  </a>
+</body>
+</html>

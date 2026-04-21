@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Captura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><img src="logo.cbtis.png" class="watermark" alt="Marca de agua">
+  <style>.watermark {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px; 
+  opacity: 2.05; 
+  pointer-events: none; 
+  z-index: 9999; 
+  }</style>
+    <header>
+      <h1>Sistema de Captura</h1>
+      <h2>Captura asistencias, reportes e incidentes de enfermería</h2>
+    </header>
+
+    <div class="caja">
+      <form>
+        <h2 class="reporte-titulo">REPORTE</h2>
+
+        <label for="nombre">Nombre del alumno:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <div>
+          <label for="NumControl">Número de control:</label>
+          <input type="text" id="NumControl" name="NumControl">
+        </div>
+
+        <label for="grupo">Grupo:</label>
+        <input type="text" id="grupo" name="grupo">
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="folio">Folio:</label>
+        <input type="text" id="folio" name="folio">
+
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="faltas"> Retardo a clase</label>
+          <label><input type="checkbox" name="faltas"> Incumplimiento en los trabajos</label>
+          <label><input type="checkbox" name="faltas"> Incitación al desorden</label>
+          <label><input type="checkbox" name="faltas"> Falta de respeto a sus compañeros</label>
+          <label><input type="checkbox" name="faltas"> Inasistencias</label>
+          <label><input type="checkbox" name="faltas"> No portar el uniforme</label>
+          <label><input type="checkbox" name="faltas"> Mala conducta</label>
+          <label><input type="checkbox" name="faltas"> Falta de respeto al personal</label>
+        </div>
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+
+        <label for="maestro">Nombre del maestro que reporta:</label>
+        <input type="text" id="maestro" name="maestro">
+
+        <label for="materia">Materia:</label>
+        <input type="text" id="materia" name="materia">
+
+        <label for="hora">Hora del incidente:</label>
+        <input type="time" id="hora" name="hora">
+
+        <label for="compromiso">Me comprometo:</label>
+        <textarea id="compromiso" name="compromiso" rows="2"></textarea>
+
+        <div class="signature-section">
+          <div>
+            <p>Alumno</p>
+            <input type="text" placeholder="Nombre / Teléfono">
+          </div>
+          <div>
+            <p>Padre o tutor</p>
+            <input type="text" placeholder="Nombre / Teléfono">
+          </div>
+          <div>
+            <p>Tutor de grupo</p>
+            <input type="text" placeholder="Nombre / Teléfono">
+          </div>
+        </div>
+
+        <button type="submit">Guardar Reporte</button>
+      </form>
+    </div>
+<script src="clave.js"></script>
+<script>
+  // Activa la protección al cargar la página
+  document.addEventListener("DOMContentLoaded", function() {
+    iniciarProteccion("CBTis220"); // puedes cambiar la clave aquí
+  });
+</script>
+    <!-- Botón rojo de salir fijo en esquina inferior izquierda -->
+    <a href="index.html" 
+       style="position:fixed; bottom:20px; left:20px; background-color:#C8102E; color:white; padding:10px 18px; border-radius:6px; font-weight:bold; text-decoration:none;">
+       inicio
+    </a>
+</body>
+</html>
